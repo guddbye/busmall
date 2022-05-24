@@ -7,7 +7,6 @@ console.log('Hi.');
 let voteCount = 25;
 let allProducts = [];
 
-
 //***************** DOM REFERENCES **************
 
 let productContainer = document.getElementById('product-container');
@@ -29,7 +28,6 @@ function Product(name, fileExtension = 'jpg') {
   allProducts.push(this);
 }
 
-
 new Product('bag');
 new Product('banana');
 new Product('bathroom');
@@ -50,9 +48,7 @@ new Product('unicorn');
 new Product('water-Can');
 new Product('wine-Glass');
 
-
 //***************** HELPER FUNCTIONS/EXECUTABLE CODE ************
-
 
 function getRandomIndex() {
   return Math.floor(Math.random() * allProducts.length);
@@ -79,11 +75,10 @@ function renderImgs() {
   imgThree.src = allProducts[productThreeIndex].photo;
   imgThree.alt = allProducts[productThreeIndex].name;
   allProducts[productThreeIndex].views++;
-
 }
+// ******************* renders new images ******************* //
 
 renderImgs();
-
 
 //******************* EVENT HANDLERS *********************
 
@@ -113,9 +108,7 @@ function handleShowResults() {
   }
 }
 
-
 //********************* EVENT LISTENERS *********************
-
 
 productContainer.addEventListener('click', handleClick);
 showResultsBtn.addEventListener('click', handleShowResults);
