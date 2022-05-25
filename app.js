@@ -48,7 +48,7 @@ new Product('shark');
 new Product('sweep', 'png');
 new Product('tauntaun');
 new Product('unicorn');
-new Product('water-Can');
+new Product('water-can');
 new Product('wine-Glass');
 
 // ***************** HELPER FUNCTIONS/EXECUTABLE CODE ***************** //
